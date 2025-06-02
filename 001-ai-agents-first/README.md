@@ -44,7 +44,7 @@ Great starting point for beginners.
 
 🚀 Getting Started
 Clone the Repository
-git clone https://github.com/fatima-zahra-github-account/agentic-ai-q4
+git clone(https://github.com/fatima-zahra-github-account/assignment-q4/)
 cd 01-ai-agents-first
 
 Set Up Python Environment Using UV
