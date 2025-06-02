@@ -1,0 +1,138 @@
+
+ Python UV - Project Setup and Usage Guide
+
+This guide explains how to use Python UV, the fastest Python package manager, to create and manage Python projects efficiently.
+
+---
+
+What is Python UV?
+
+Python UV is a modern, fast, and ergonomic package manager for Python that simplifies project setup, dependency management, and running scripts.
+
+* Official Docs: [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
+* Tutorial: [Python UV: The Ultimate Guide](https://www.datacamp.com/tutorial/python-uv)
+* Video Tutorial: [Python Setup, Simplified](https://www.youtube.com/watch?v=-J5SnWR4UXw)
+
+---
+
+## Getting Started with UV
+
+### Check UV Version and Help
+
+```bash
+uv version
+uv help
+```
+
+---
+
+## Creating a New Packaged Project
+
+Use the `--package` flag to initialize a new Python project structured for packaging and publishing.
+
+```bash
+uv init --package explore-uv
+```
+
+This creates a project with your source code inside a `src/` directory, following best Python practices.
+
+---
+
+### Open Project in VS Code
+
+```bash
+cd explore-uv
+code .
+```
+
+---
+
+## Setting Up Virtual Environment
+
+Create a virtual environment inside your project using:
+
+```bash
+uv venv
+```
+
+Activate the virtual environment:
+
+* On Linux/macOS:
+
+  ```bash
+  source .venv/bin/activate
+  ```
+
+* On Windows:
+
+  ```powershell
+  .\.venv\Scripts\activate
+  ```
+
+---
+
+### Select Python Interpreter in VS Code
+
+After activating the virtual environment, select the recommended Python interpreter located at:
+
+```
+./.venv/bin/python
+```
+
+This ensures VS Code uses the correct Python version for your project.
+
+---
+
+## Managing Dependencies
+
+To add a dependency to your project, use:
+
+```bash
+uv add <package-name>
+```
+
+Example:
+
+```bash
+uv add crewai
+```
+
+---
+
+## Running Your Project
+
+Run your Python application using:
+
+```bash
+uv run explore-uv
+```
+
+---
+
+## Summary of Useful Commands
+
+| Command                     | Description                                |
+| --------------------------- | ------------------------------------------ |
+| `uv version`                | Check the installed UV version             |
+| `uv help`                   | Show help and available commands           |
+| `uv init --package <name>`  | Initialize a packaged Python project       |
+| `uv venv`                   | Create a virtual environment               |
+| `source .venv/bin/activate` | Activate virtual environment (Linux/macOS) |
+| `.\.venv\Scripts\activate`  | Activate virtual environment (Windows)     |
+| `uv add <package>`          | Add a new dependency                       |
+| `uv run <project-name>`     | Run your Python project                    |
+
+---
+
+Feel free to refer to the official docs and tutorials for deeper insights:
+
+* Official Docs: [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
+* Running Scripts Guide: [https://docs.astral.sh/uv/guides/scripts/](https://docs.astral.sh/uv/guides/scripts/)
+* Working on Projects Guide: [https://docs.astral.sh/uv/guides/projects/](https://docs.astral.sh/uv/guides/projects/)
+
+---
+
+Happy coding with Python UV! 
+
+---
+

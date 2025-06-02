@@ -1,0 +1,50 @@
+What is Swarm?
+
+Swarm is an experimental framework by OpenAI to help developers build systems where multiple AI agents work together like a team to solve complex tasks.
+
+It focuses on being:
+
+* Lightweight (easy to use)
+* Ergonomic (developer-friendly)
+* Flexible (easy to test and scale)
+
+ Key Concepts of Swarm
+
+1. Agents
+An Agent is like a team member trained to do one specific job using tools and instructions.
+
+📌 Example:
+In a customer support system:
+
+* One agent handles technical questions.
+* Another handles billing issues.
+* Another answers general queries.
+
+Each agent is specialized and focuses only on its own task.
+
+
+ 2. Handoffs
+A Handoff means passing a task from one agent to another who’s better suited to handle it.
+
+📌 Example:
+If the general query agent gets a message about a refund, it can **handoff** the task to the billing agent who knows how to handle refund requests.
+
+
+ Why Use Swarm?
+
+* Breaks big problems into smaller parts
+* Lets agents cooperate and specialize
+* Makes it easy to test and build complex AI systems
+
+
+ Real-Life Analogy
+
+Imagine a hospital:
+
+* A nurse checks symptoms (Agent 1)
+* A doctor makes the diagnosis (Agent 2)
+* A pharmacist gives medicine (Agent 3)
+
+If the nurse sees something serious, she hands off the patient to the doctor. That’s exactly how Swarm works — AI agents hand off tasks to each other.
+
+
